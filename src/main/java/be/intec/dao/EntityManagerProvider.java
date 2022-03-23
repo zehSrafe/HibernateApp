@@ -15,7 +15,7 @@ public class EntityManagerProvider {
     private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("datasource", fillEMF());
 
     private static Map<String, String> fillEMF() {
-        Path credentialsFile = Paths.get("D:\\_School\\Cloud\\OneDrive - INTEC BRUSSEL vzw\\Intec\\HibernateApp\\src\\main\\resources\\credentials");
+        Path credentialsFile = Paths.get("src\\main\\resources\\credentials");
         List<String> readCredentials = null;
         try {
             readCredentials = Files.readAllLines(credentialsFile);
